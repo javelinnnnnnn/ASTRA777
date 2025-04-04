@@ -227,9 +227,55 @@
                     </div>
                 </div>
             </div>
-            <div class="d-grip mt-3" id="button-container" style="display:-moz-box;">
-                    <a href="https://astra777a.com/register?voucher=1fy2&ref=qgizpix"><button class="btn btn-success text-main-color w-50" type="button">Inject Server</button></a>
-                </div>
+            <!-- SweetAlert2 CDN -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<div class="d-grip mt-3" id="button-container" style="display:-moz-box;">
+    <button class="btn btn-success text-main-color w-50" type="button" onclick="showPopup()">Inject Server</button>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<script>
+    function generateRandomCode(length) {
+        const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
+        let result = '';
+        for (let i = 0; i < length; i++) {
+            result += characters.charAt(Math.floor(Math.random() * characters.length));
+        }
+        return result;
+    }
+
+    function showPopup() {
+        Swal.fire({
+            title: 'Konfirmasi',
+            text: 'Apakah kamu yakin ingin meng-inject server?',
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonText: 'Ya, lanjut',
+            cancelButtonText: 'Batal'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                const code = generateRandomCode(6);
+                Swal.fire({
+                    title: 'Kode Injeksi',
+                    html: `
+                        Kode kamu: <strong>${code}</strong><br><br>
+                        <a href="https://astra777go.com/register?voucher=H27N&ref=qgizpix" 
+                           class="btn btn-success" 
+                           style="padding:8px 16px;display:inline-block;background:#28a745;color:white;border-radius:5px;text-decoration:none;">
+                           Klik di sini untuk melanjutkan
+                        </a>
+                        <p style="margin-top:15px;font-size:14px;color:#555;">
+                            <B>SEBELUM BERMAIN SILAHKAN MEMBERIKAN KODE INI KEPADA WHATSAPP ADMIN OFFICIAL ASTRA777</B>.
+                        </p>
+                    `,
+                    icon: 'info',
+                    showConfirmButton: false
+                });
+            }
+        });
+    }
+</script>                              
             <div class="col-12 my-2 submit-container" style="display: none;">
                 <button type="submit" class="btn btn-success w-100">AKTIFKAN CHEAT</button>
             </div>
@@ -286,8 +332,8 @@
                     <img src="astrapop.gif" alt="" class="img-fluid">
                 </div>
                 <div><center>
-                    <a href="https://t.me/+HSMbEcVIINI5YjM1"><button type="button" class="btn btn-outline-info" data-bs-dismiss="modal">Telegram</button></a>
-                    <a href="https://www.facebook.com/groups/1809689816433796"><button type="button" class="btn btn-outline-primary" data-bs-dismiss="modal">Facebook</button></a></center>
+                    <a href="http://t.me/membergroupnorakplay"><button type="button" class="btn btn-outline-info" data-bs-dismiss="modal">Telegram</button></a>
+                    <a href="https://www.facebook.com/groups/810908937826315"><button type="button" class="btn btn-outline-primary" data-bs-dismiss="modal">Facebook</button></a></center>
                 </div>
                 <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Tutup</button>
                 </div>

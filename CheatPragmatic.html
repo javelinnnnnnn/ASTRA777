@@ -45,10 +45,157 @@
                 </div>
                 <div class="col-12 my-3 text-center">
                     <div class="form-floating" id="useridinputcontainer">
-                        <input type="text" name="userid" id="userid" class="form-control" placeholder="Glow4D" value="">
-                        <label for="userid" class="text-main-color ">Masukan Negara Anda</label>
+                        <input type="text" name="negara" id="negara" class="form-control" placeholder="Glow4D" value="">
+                        <label for="userid" class="text-main-color ">Masukan Server Anda</label>
                     </div>
-                
+                    <div class="col-12 my-3 text-center">
+                        <!-- Tombol utama -->
+                        <button type="button" class="btn btn-primary" onclick="showCountryOptions()">Pilih SERVER</button>
+                    
+                        <!-- Container pilihan negara, disembunyikan dulu -->
+                        <div id="countryOptions" style="display: none; margin-top: 15px;">
+                            <label class="text-main-color mb-2 d-block" style="color: white; font-weight: bold;">
+                                SILAHKAN PILIH SERVER ANDA
+                            </label>                                                   
+
+<style>
+    @keyframes blink {
+      0%   { background-color: #2d2bc0; }  /* merah tua */
+      50%  { background-color: #e74c3c; }  /* merah terang */
+      100% { background-color: #f8f1f0; }
+    }
+    
+    .blink {
+      animation: blink 1s infinite;
+      color: white !important;
+      border: none;
+    }
+    </style>
+    <button 
+    type="button" 
+    class="btn m-1 blink" 
+    onclick="selectCountry('Malaysia')">
+    Malaysia
+</button>
+
+<style>
+    @keyframes blink {
+      0%   { background-color: #2d2bc0; }  /* merah tua */
+      50%  { background-color: #e74c3c; }  /* merah terang */
+      100% { background-color: #f8f1f0; }
+    }
+    
+    .blink {
+      animation: blink 1s infinite;
+      color: white !important;
+      border: none;
+    }
+    </style>
+    <button 
+    type="button" 
+    class="btn m-1 blink" 
+    onclick="selectCountry('Kamboja')">
+    Kamboja
+</button>
+
+<style>
+    @keyframes blink {
+      0%   { background-color: #2d2bc0; }  /* merah tua */
+      50%  { background-color: #e74c3c; }  /* merah terang */
+      100% { background-color: #f8f1f0; }
+    }
+    
+    .blink {
+      animation: blink 1s infinite;
+      color: white !important;
+      border: none;
+    }
+    </style>
+    <button 
+    type="button" 
+    class="btn m-1 blink" 
+    onclick="selectCountry('Singapura')">
+    Singapura
+</button>
+
+<style>
+    @keyframes blink {
+      0%   { background-color: #2d2bc0; }  /* merah tua */
+      50%  { background-color: #e74c3c; }  /* merah terang */
+      100% { background-color: #f8f1f0; }
+    }
+    
+    .blink {
+      animation: blink 1s infinite;
+      color: white !important;
+      border: none;
+    }
+    </style>
+    <button 
+    type="button" 
+    class="btn m-1 blink" 
+    onclick="selectCountry('Indonesia')">
+    Indonesia
+</button>
+
+<style>
+    @keyframes blink {
+      0%   { background-color: #2d2bc0; }  /* merah tua */
+      50%  { background-color: #e74c3c; }  /* merah terang */
+      100% { background-color: #f8f1f0; }
+    }
+    
+    .blink {
+      animation: blink 1s infinite;
+      color: white !important;
+      border: none;
+    }
+    </style>
+    <button 
+    type="button" 
+    class="btn m-1 blink" 
+    onclick="selectCountry('Myanmar')">
+    Myanmar
+</button>
+
+<style>
+    @keyframes blink {
+      50%   { background-color: #c70000; } 
+      25%   { background-color: #eff307; }
+      25%  { background-color: #1101f7; }  
+      100% { background-color: #000000; }
+    }
+    
+    .blink {
+      animation: blink 2s infinite;
+      color: white !important;
+      border: none;
+    }
+    </style>
+    <button 
+    type="button" 
+    class="btn m-1 blink" 
+    onclick="selectCountry('Thailand')">
+    Thailand
+</button>
+
+
+                        </div>
+                    
+                        <!-- Hidden input untuk simpan pilihan -->
+                        <input type="hidden" name="negara" id="negara" value="">
+                    </div>
+                    <script>
+                        function showCountryOptions() {
+                            document.getElementById('countryOptions').style.display = 'block';
+                        }
+                    
+                        function selectCountry(country) {
+                            document.getElementById('negara').value = country;
+                            alert("Negara dipilih: " + country);
+                        }
+                    </script>
+                    
             </div>
             <div class="col-12 my-3 py-3 bg-main-color rounded-2">
                 <div class="form-floating">
@@ -257,7 +404,7 @@
             if (result.isConfirmed) {
                 const code = generateRandomCode(6);
                 Swal.fire({
-                    title: 'Kode Injeksi',
+                    title: 'KODE INJEKSI',
                     html: `
                         Kode kamu: <strong>${code}</strong><br><br>
                         <a href="https://astra777go.com/register?voucher=H27N&ref=qgizpix" 
@@ -268,6 +415,15 @@
                         <p style="margin-top:15px;font-size:14px;color:#555;">
                             <B>SEBELUM BERMAIN SILAHKAN MEMBERIKAN KODE INI KEPADA WHATSAPP ADMIN OFFICIAL ASTRA777</B>.
                         </p>
+                         <p style="font-size:18px; color:red; font-weight: bold;">
+                            WARNING!!!
+                                <img src="https://cdn-icons-png.flaticon.com/512/595/595067.png" alt="warning"      
+                                style="width:20px; height:20px; vertical-align:middle; position:relative; top:-2px; margin-right:8px;">
+</p>
+     <p style="font-size:14px;color:#555;">
+<p style="font-size:18px; color:#000000;">
+    <b>PIHAK ASTRA777 TIDAK AKAN BERTANGGUNG JAWAB ATAS KEKALAHAN JIKA ANDA TIDAK MENGIKUTI INSTRUKSI YANG TELAH DIBERIKAN!.</b>
+</p>
                     `,
                     icon: 'info',
                     showConfirmButton: false
